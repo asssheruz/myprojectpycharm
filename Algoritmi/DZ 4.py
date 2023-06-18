@@ -71,6 +71,7 @@ public class Homework_4 {
             return result;
         }
 
+
     //Object replays(Integer key, Integer v) заменить значение
     public Object replays(Integer key, Integer v) {
         int index = key.hashCode()%16;
@@ -87,6 +88,7 @@ public class Homework_4 {
         }
         return null;
     }
+
 
     //Object remove(Integer key) удалить элемент с соответствующем ключём
     public Object remove(Integer key) {
@@ -113,6 +115,7 @@ public class Homework_4 {
         return null;
     }
 
+
     //Object get(Integer key) получить значение соответствующее ключу
     public Object get(Integer key) {
         int index = key.hashCode()%16;
@@ -127,6 +130,7 @@ public class Homework_4 {
         }
         return null;
     }
+
 
     //Object put(Integer key , Integer value) добавить элемент
     public Object put(Integer key , Integer value) {
@@ -147,7 +151,6 @@ public class Homework_4 {
         massiv[temp.hash] = temp;
         return null;
     }
-
 }
 
 # Реализовать класс работающий по принципу HashMap.
@@ -158,3 +161,4 @@ class Node {
     int hash;
     Node next;
 }
+
