@@ -13,7 +13,7 @@ select_menu = 'Выберете пункт меню: '
 
 input_error = f'Ошибка ввода. Введите число от 1 до {len(main_menu)-1}: '
 
-new_contact = {'name': 'Ввудите имя контакта: ',
+new_contact = {'name': 'Введите имя контакта: ',
                 'phone': 'Введите телефон: ',
                 'comment': 'Введите комментарий'}
 
@@ -26,3 +26,8 @@ error_save = 'Ошибка сохранения телефонной книги'
 
 def add_successful(name: str) -> str:
     return f'Контакт {name} успешно добавлен в книгу!'
+
+search_word = 'Введите строку для поиска: '
+
+def empty_search(word: str) -> str:
+    return f'Контакты содержащие {word} не найданы'

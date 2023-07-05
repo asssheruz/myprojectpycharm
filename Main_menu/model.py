@@ -21,6 +21,15 @@ def save_file():
     except:
             return False
 
+
+def search(word: str) -> dict[int: dict[str, str]]:
+    result = {}
+    for index, contact in phone_book.items():
+        if word.lower() in ' '.join(contact.values()).lower():
+            result[index] = contact
+    return result
+
+
 def check_id():
     if phone_book:
         return max(list(map(int, phone_book))) + 1
